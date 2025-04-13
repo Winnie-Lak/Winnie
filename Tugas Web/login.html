@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Halaman Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #246b45;
+    }
+
+    .daftar {
+      margin-top: 15px;
+    }
+
+    .nav {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .nav a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+    <video class="bg-video" autoplay muted loop>
+      <source src="video1.mp4" type="video/mp4">
+      Browser Anda tidak mendukung video.
+    </video>
+    <p class="daftar">Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+    <div class="nav">
+      <a href="index.html">Beranda</a> |
+      <a href="biodata.html">Biodata</a> |
+      <a href="kontak.html">Kontak</a>
+    </div>
+  </div>
+
+</body>
+</html>
